@@ -24,12 +24,12 @@
       >
     {% endif %}
 
-    {%- render 'meta-tags' -%}
+    {% comment %} {%- render 'meta-tags' -%}
     {%- render 'stylesheets' -%}
     {%- render 'fonts' -%}
     {%- render 'scripts' -%}
     {%- render 'theme-styles-variables' -%}
-    {%- render 'color-palette' -%}
+    {%- render 'color-palette' -%} {% endcomment %}
 
     {% if request.design_mode %}
       {%- render 'theme-editor' -%}
@@ -127,9 +127,9 @@
         {{ content_for_layout }}
       </main>
 
-      <footer>
+      {% comment %} <footer>
         {% sections 'footer-group' %}
-      </footer>
+      </footer> {% endcomment %}
     </div>
 
     {% render 'cart-drawer', render_wrapper: true %}
