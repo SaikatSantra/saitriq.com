@@ -46,9 +46,10 @@
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
             "style_class": "button-custom",
-            "custom_button_background": "rgba(0, 0, 0, 0)",
+            "custom_button_background": "rgba(0,0,0,0)",
             "custom_button_text": "{{ settings.color_palette.background }}",
             "custom_button_border": "{{ settings.color_palette.background }}",
+            "link_text_color": "",
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
@@ -61,10 +62,15 @@
         "text_YLPk4p",
         "button_H9gpTf"
       ],
+      "disabled": true,
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
         "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
         "link": "",
         "open_in_new_tab": false,
         "content_direction": "column",
@@ -78,6 +84,7 @@
         "section_width": "page-width",
         "section_height": "medium",
         "section_height_custom": 50,
+        "background_color": "",
         "toggle_overlay": true,
         "overlay_color": "#12121266",
         "overlay_style": "solid",
@@ -111,11 +118,13 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
+            "background_color": "",
             "video_position": "cover",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
+            "border_color": "",
             "border_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
@@ -138,6 +147,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -155,6 +165,10 @@
                 "label": "View all",
                 "open_in_new_tab": false,
                 "style_class": "button-unstyled",
+                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -174,9 +188,11 @@
           "static": true,
           "settings": {
             "product_card_gap": 4,
+            "background_color": "",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
+            "border_color": "",
             "border_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
@@ -192,6 +208,7 @@
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
+                "border_color": "",
                 "border_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -214,6 +231,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -239,6 +257,7 @@
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
+                "text_color": "",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -254,6 +273,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "t:names.featured_collection",
       "settings": {
         "collection": "all",
@@ -270,13 +290,103 @@
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
+        "background_color": "",
         "padding-block-start": 48,
         "padding-block-end": 48
+      }
+    },
+    "static_index_mA9cAh": {
+      "type": "static-index",
+      "blocks": {
+        "technology_item_DJBcR3": {
+          "type": "technology_item",
+          "settings": {
+            "title": "Asynchronous Multi-Node Frameworks",
+            "description": "<p>Developed utilizing optimized native web engines (<strong>HTML5 Canvas, advanced ES6+ JS systems</strong>) to ensure asynchronous asset execution.</p>"
+          }
+        },
+        "technology_item_79MQTj": {
+          "type": "technology_item",
+          "settings": {
+            "title": "Asynchronous Multi-Node Frameworks",
+            "description": "<p>Developed utilizing optimized native web engines (<strong>HTML5 Canvas, advanced ES6+ JS systems</strong>) to ensure asynchronous asset execution.</p>"
+          }
+        },
+        "service_card_igjFKw": {
+          "type": "service_card",
+          "settings": {
+            "icon": "layers",
+            "title": "UI/UX & Website Design",
+            "description": "High-fidelity clean blueprints constructed custom around dark layouts, luxury branding, and pixel-precise wireframes."
+          }
+        },
+        "portfolio_item_qUYYUV": {
+          "type": "portfolio_item",
+          "settings": {
+            "icon": "shopping-bag",
+            "category": "E-Commerce",
+            "project_title": "Z's Coffee Digital Hub",
+            "description": "Luxury minimalist storefront built with custom headless framework orchestration."
+          }
+        },
+        "process_step_gEpbmF": {
+          "type": "process_step",
+          "settings": {
+            "phase_number": "01",
+            "title": "System Diagnostic & Blueprinting",
+            "description": "Objective: Deep architectural audit. We map your current ecosystem's operational failures, latency bottlenecks, and structural constraints. Our data architects deliver a raw technical blueprint detailing exactly how we will decouple, rebuild, and secure your new runtime environment."
+          }
+        },
+        "testimonial_VANqEx": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "\"Saitriq delivered structural absolute brilliance. They completely revolutionized our digital flagship platform layout, transforming it into an ultra-fast engine with unmatched cinematic fidelity.\"",
+            "author_title": "Director of Product Operations",
+            "author_company": "Global Artisan Networks"
+          }
+        },
+        "value_point_MdmiKT": {
+          "type": "value_point",
+          "settings": {
+            "number": "01",
+            "title": "Tailored Motion Controls",
+            "description": "Custom decoupled animation timelines bypassing jerky cross-browser render cycles completely."
+          }
+        }
+      },
+      "block_order": [
+        "technology_item_DJBcR3",
+        "technology_item_79MQTj",
+        "service_card_igjFKw",
+        "portfolio_item_qUYYUV",
+        "process_step_gEpbmF",
+        "testimonial_VANqEx",
+        "value_point_MdmiKT"
+      ],
+      "name": "Static Index",
+      "settings": {
+        "hero_badge_text": "ultra modern digital command",
+        "hero_title": "High-performance architecture for scaled e-commerce.",
+        "hero_subtitle": "We disrupt the traditional storefront stack. Saitraq engineers asynchronous, multi-node web infrastructure backed by data transparency, sub-millisecond execution, and clean architectural primitives.",
+        "hero_description": "Standard platforms crumble under complex scaling demands. Saitraq doesn't just build websites; we synthesize high-fidelity digital platforms. By decoupling data processing from visual layers, we provide enterprise networks with a bulletproof ecosystem optimized for lightning-fast catalog mutations, real-time inventory syncing, and zero-latency user experiences.",
+        "primary_cta_text": "Explore Architecture",
+        "primary_cta_link": "",
+        "secondary_cta_text": "Initiate Brief",
+        "secondary_cta_link": "",
+        "scroll_hint_text": "scroll to ignite",
+        "header_cta_text": "Get In Touch",
+        "header_cta_link": "",
+        "company_name": "Saitriq",
+        "about_description": "At Saitriq, we operate at the precise nexus of computational rendering and elite web architecture. We dismantle ordinary digital experiences and rebuild them with meticulous engineering attention.\n\nWhether deploying decentralized React models, 3D Canvas integration, or highly interactive e-commerce touchpoints, our objective remains rigid: creating unrivaled performance-optimized platforms that instantly signal premium market presence.",
+        "stores_enhanced_count": 500,
+        "since_year": 2016,
+        "footer_copyright": "© 2026 SAITRIQ LABS. ALL ENGINEERING RIGHTS RESERVED."
       }
     }
   },
   "order": [
     "hero_jVaWmY",
-    "product_list_fa6P9H"
+    "product_list_fa6P9H",
+    "static_index_mA9cAh"
   ]
 }
