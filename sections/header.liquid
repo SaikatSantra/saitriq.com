@@ -319,8 +319,7 @@
     {% endif %}
     "url": {{ request.origin | append: page.url | json }}
   }
-</script>
-{% comment %} 
+</script> 
 <header-component
   id="header-component"
   class="{{ class }}"
@@ -460,29 +459,7 @@
       {{ navigation_bar }}
     </div>
   {% endif %}
-</header-component> {% endcomment %}
-{% comment %} //static index header component for performance and to avoid flicker on page load {% endcomment %}
- <header class="fixed top-0 left-0 w-full z-50 glass-panel border-b border-borderMuted">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      <a href="{{ '/' | relative_url }}" class="text-xl font-bold tracking-widest text-surface uppercase flex items-center gap-4 brand-logo-wrapper">
-        {% if settings.logo %}
-          <img src="{{ settings.logo | image_url: width: 40000 }}" alt="{{ shop.name }}" class="h-20 w-auto">
-        {% else %}
-          <span class="inline-flex items-center gap-2">{{ shop.name }}<span class="w-1.5 h-1.5 bg-accent rounded-full"></span></span>
-        {% endif %}
-      </a>
-      <nav class="hidden md:flex items-center gap-8 text-xs font-medium uppercase tracking-widest text-muted">
-        <a href="#about" class="hover:text-white transition-colors">About</a>
-        <a href="#services" class="hover:text-white transition-colors">Services</a>
-        <a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a>
-        <a href="#process" class="hover:text-white transition-colors">Process</a>
-        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
-      </nav>
-      <a href="#contact" class="magnetic-btn relative px-5 py-2.5 overflow-hidden rounded-full border border-surface-strong text-xs font-medium uppercase tracking-wider text-surface hover:border-accent transition-all duration-300">
-        Get In Touch
-      </a>
-    </div>
-  </header>
+</header-component> 
 
 <script
   src="{{ 'header.js' | asset_url }}"
