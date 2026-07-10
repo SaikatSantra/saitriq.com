@@ -71,7 +71,9 @@
 .coming-soon-wrapper header, .coming-soon-wrapper main, .coming-soon-wrapper footer, .coming-soon-wrapper .tag, .coming-soon-wrapper .matrix-card, .coming-soon-wrapper .engine-controls { pointer-events: auto; }
 
 .coming-soon-wrapper header { display: flex; justify-content: center; align-items: center; height: 6vh; }
-.coming-soon-wrapper .logo-img { height: 100%; max-height: 50px; object-fit: contain; }
+.coming-soon-wrapper .logo-img { 
+    /* height: 100%; max-height: 50px;  */ width: 180px;
+    object-fit: contain; }
 .coming-soon-wrapper .main-workspace { display: grid; grid-template-columns: 1fr 1.2fr; gap: 3vw; align-items: center; height: 78vh; width: 100%; max-width: 1350px; margin: 0 auto; }
 
 .coming-soon-wrapper .badge {
